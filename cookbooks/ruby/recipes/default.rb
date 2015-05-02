@@ -1,3 +1,7 @@
+package "libssl-dev" do
+  action :install
+end
+
 git "/home/#{node["app-user"]}/xbuild" do
   repository "https://github.com/tagomoris/xbuild.git"
   user node["app-user"]
